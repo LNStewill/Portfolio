@@ -1,0 +1,347 @@
+html {
+    font-size: 16px;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../asset/2.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+
+}
+
+*{
+    margin: 0.0rem;
+    padding: 0.0rem;
+}
+
+.main{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    width: 75rem;
+    height: 4.6875rem;
+    margin: auto;
+}
+.menu .active {
+    background-color: #04AA6D;
+  color: white;
+}
+.icon{
+    width: 12.5rem;
+    float: left;
+    height: 4.375rem;
+}
+
+.logo{
+    color: #ff7200;
+    font-size: 2.1875rem;
+    font-family: Arial;
+    padding-left: 1.25rem;
+    float: left;
+    padding-top: 0.625rem;
+    margin-top: 0.3125rem
+}
+
+.menu{
+    width: 25rem;
+    float: left;
+    height: 4.375rem;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 3.875rem;
+    margin-top: 1.6875rem;
+    font-size: 0.875rem;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+
+.search{
+    width: 20.625rem;
+    float: left;
+    margin-left: 16.875rem;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 12.5rem;
+    height: 2.5rem;
+    background: transparent;
+    border: 0.0625rem solid #ff7200;
+    margin-top: 0.8125rem;
+    color: #fff;
+    border-right: none;
+    font-size: 1rem;
+    float: left;
+    padding: 0.625rem;
+    border-bottom-left-radius: 0.3125rem;
+    border-top-left-radius: 0.3125rem;
+}
+
+.btn{
+    width: 6.25rem;
+    height: 2.5rem;
+    background: #ff7200;
+    border: 0.125rem solid #ff7200;
+    margin-top: 0.8125rem;
+    color: #fff;
+    font-size: 0.9375rem;
+    border-bottom-right-radius: 0.3125rem;
+    border-bottom-right-radius: 0.3125rem;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.content{
+    width: 75rem;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 1.25rem;
+    padding-bottom: 1.5625rem;
+    font-family: Arial;
+    letter-spacing: 0.075rem;
+    line-height: 1.875rem;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 3.125rem;
+    padding-left: 1.25rem;
+    margin-top: 9%;
+    letter-spacing: 0.125rem;
+}
+
+.content .cn{
+    width: 10rem;
+    height: 2.5rem;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 0.625rem;
+    margin-left: 1.25rem;
+    font-size: 1.125rem;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: #fff;
+}
+
+.content span{
+    color: #ff7200;
+    font-size: 4.0625rem
+}
+
+.form{
+    width: 15.625rem;
+    height: 23.75rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: -1.25rem;
+    left: 54.375rem;
+    transform: translate(0%,-5%);
+    border-radius: 0.625rem;
+    padding: 1.5625rem;
+}
+
+.form h2{
+    width: 13.75rem;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 1.375rem;
+    background-color: #fff;
+    border-radius: 0.625rem;
+    margin: 0.125rem;
+    padding: 0.5rem;
+}
+
+.form input{
+    width: 15rem;
+    height: 2.1875rem;
+    background: transparent;
+    border-bottom: 0.0625rem solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 0.9375rem;
+    letter-spacing: 0.0625rem;
+    margin-top: 1.875rem;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn{
+    width: 15rem;
+    height: 2.5rem;
+    background: #ff7200;
+    border: none;
+    margin-top: 1.875rem;
+    font-size: 1.125rem;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.0625rem;
+    padding-top: 1.25rem;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #ff7200;
+}
+.liw{
+    padding-top: 0.9375rem;
+    padding-bottom: 0.625rem;
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon{
+    color: #fff;
+    font-size: 1.875rem;
+    padding-left: 0.875rem;
+    padding-top: 0.3125rem;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: #ff7200;
+}
+
+
+/* Pour appliquer l'effet overlay à l'image*/
+.containerAboutImage {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: /*#008CBA*/ #2a3441;
+    opacity: 0.85;
+    overflow: /*hidden*/ scroll;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+  }
+  
+  .containerAboutImage:hover .overlay {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  
+  .AboutImagetext {
+    color: white;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .AboutImagetext p {
+    font-size:1.2rem; text-align: justify
+  }
+  /*image avec efftet overlay */
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 15rem;
+    padding: 0.5rem;
+    background-color: hwb(0 0% 100%);
+    color: white;
+    text-align: center;
+  }
+
+  .footersection {
+      display: flex;
+      gap: 0.2rem;
+  }
+
+  .footer article {
+      width: 31%;
+  }
