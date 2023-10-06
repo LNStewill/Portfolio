@@ -45,7 +45,7 @@ Votre portfolio doit inclure les éléments suivants :
 >Ensuite essayer de reproduire une page statique avec les différents éléments du Wireframe
 
 **Ensuite les erreurs dans le code html**
->Tout checker sur le site *https://validator.w3.org/#validate_by_input*
+ [>Tout checker sur le site](https://validator.w3.org/#validate_by_input)
 
 > Essayer de réduire au maximum les erreurs et pourquoi pas atteindre un taux de *Zéro* 
 
