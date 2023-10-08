@@ -15,7 +15,7 @@ html {
     width: 100%;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: auto/*100vh*/;
 }
 
 .navbar{
@@ -127,6 +127,7 @@ ul li a:hover{
 
 .content{
     width: 75rem;
+    /*je dois enlever cette valeur auto de height pour appliquer le 100hv aux autres classes */
     height: auto;
     margin: auto;
     color: #fff;
@@ -141,6 +142,9 @@ ul li a:hover{
     line-height: 1.875rem;
 }
 
+.par {
+    text-align: justify;
+}
 .content h1{
     font-family: 'Times New Roman';
     font-size: 3.125rem;
@@ -278,6 +282,17 @@ ul li a:hover{
 }
 
 
+/*ici le style de la section apropos*/
+.Apropos .Aboutimage1{
+    float: left;
+    width: 46%;
+}
+
+.Apropos .Aboutimage2{
+    float: right;
+    width: 46%;
+}
+
 /* Pour appliquer l'effet overlay à l'image*/
 .containerAboutImage {
     position: relative;
@@ -329,6 +344,11 @@ ul li a:hover{
   }
   /*image avec efftet overlay */
 
+.CONTACT {
+    justify-content: center;
+    align-items: center;
+}
+
 .footer {
     left: 0;
     bottom: 0;
@@ -348,3 +368,77 @@ ul li a:hover{
   .footer article {
       width: 31%;
   }
+
+  .copyright a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .copyright p {
+    text-align: center;
+  }
+
+  /*partie formulaire de contact*/
+  input[type=text], [type=email], select, textarea {
+    width: 100%;
+    background-color: #011721;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  select {
+    color: #fff;
+  }
+  
+  input[type=submit] {
+    background-color: #0088ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #ff7200;
+  }
+  
+  .container {
+    display: block;
+    width: 50%;
+    margin-left: 15%;
+    border-radius: 5px;
+    /*background-color: #f2f2f2;*/
+    padding: 20px;
+  }
+
+
+/* le block conteneur */
+.Texte_defilant {
+	max-width: 60rem;                      /* largeur de la fenêtre */
+	margin: 1rem auto 2rem;
+	border: 0.3rem solid #F0F0FF;
+	overflow: hidden;                     /* masque tout ce qui dépasse */
+	box-shadow: 0 .25rem .5rem #CCC,inset 0 0 1rem .25rem #CCC;
+}
+/* le bloc défilant */
+.Texte_defilant > :first-child {
+  display: inline-block;                /* modèle de boîte en ligne */
+  padding-right: 2rem;                   /* un peu d'espace pour la transition */
+  padding-left: 100%;                   /* placement à droite du conteneur */
+  white-space: nowrap;                  /* pas de passage à la ligne */
+  animation: defilement 15s infinite linear;
+}
+
+@keyframes defilement {
+  0% {
+    transform: translate3d(/*x position*/0,/*y*/-50%,/*z*/0);      /* position initiale à droite */
+  }
+  100% {
+    transform: translate3d(-100%,0,0);  /* position finale à gauche */
+  }
+}
