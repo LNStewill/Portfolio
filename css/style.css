@@ -1,8 +1,12 @@
 html {
     font-size: 16px;
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../asset/2.jpg);
-    background-repeat: repeat;
-    background-size: contain;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../asset/cat-1285634_1280.webp),url(../asset/2.jpg);
+    /*/* Utilisez "linear-gradient" pour ajouter un effet d'arrière-plan 
+    plus sombre à l'image (asset/2.jpg). Cela rendra le texte plus facile à lire */
+    background-repeat: no-repeat;
+    background-position: center,top left ;
+    background-size: cover, contain;
+    scroll-behavior: smooth ;/*permet d'animer le defilement ou scroller de façon synchrone et un peu animé et non facadé*/
 
 }
 
@@ -13,9 +17,11 @@ html {
 
 .main{
     width: 100%;
-    background-position: center;
-    background-size: cover;
+    /*background-position: center;
+    background-size: cover;*/
     height: auto/*100vh*/;
+
+    margin-bottom: 7rem;
 }
 
 .navbar{
@@ -369,6 +375,10 @@ ul li a:hover{
       width: 31%;
   }
 
+  .midlefootarticle a {
+    color: #fff;
+    text-decoration: none;
+  }
   .copyright a {
     color: #fff;
     text-decoration: none;
@@ -382,24 +392,23 @@ ul li a:hover{
   input[type=text], [type=email], select, textarea {
     width: 100%;
     background-color: #011721;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 0.75rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.25rem;
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
+    margin-top: 0.375rem;
+    margin-bottom: 1rem;
     resize: vertical;
-  }
-  select {
     color: #fff;
+
   }
   
   input[type=submit] {
     background-color: #0088ff;
     color: white;
-    padding: 12px 20px;
+    padding: 0.75rem 1.25rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     cursor: pointer;
   }
   
@@ -411,9 +420,9 @@ ul li a:hover{
     display: block;
     width: 50%;
     margin-left: 15%;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     /*background-color: #f2f2f2;*/
-    padding: 20px;
+    padding: 1.25rem;
   }
 
 
@@ -435,10 +444,16 @@ ul li a:hover{
 }
 
 @keyframes defilement {
-  0% {
-    transform: translate3d(/*x position*/0,/*y*/-50%,/*z*/0);      /* position initiale à droite */
+    0% {
+      transform: translate3d(/*x position*/0,/*y*/-50%,/*z*/0);      /* position initiale à droite */
+    }
+    100% {
+      transform: translate3d(-100%,0,0);  /* position finale à gauche */
+    }
   }
-  100% {
-    transform: translate3d(-100%,0,0);  /* position finale à gauche */
-  }
-}
+
+
+  /*Responsive css */
+  /**
+  *
+  */

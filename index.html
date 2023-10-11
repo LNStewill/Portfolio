@@ -157,7 +157,7 @@
             <arctile class="container">
                 <h3>Formulaire de contact</h3>
                 <br>
-                  <form action="#">
+                  <form  method="post" action="mailto:nathan.stewill.loufoua@diderot-campus.fr?cc=secondemail@example.com&bcc=lastemail@example.com&subject=Mail from our Website&body=">
                     <label for="fname">Prénom</label>
                     <input type="text" id="fname" name="firstname" placeholder="Votre Nom..">
                 
@@ -173,10 +173,8 @@
                       <option value="canada">Canada</option>
                       <option value="usa">USA</option>
                     </select>
-                
                     <label for="subject">Objet</label>
-                    <textarea id="subject" name="subject" placeholder="Écrivez quelquechose.." style="height:200px"></textarea>
-                
+                    <textarea name="message" id="message" placeholder="Écrivez quelquechose.." style="height:200px" lang="fr"></textarea>                
                     <input type="submit" value="Envoyer">
                   </form>
             </arctile>
@@ -195,7 +193,7 @@
                 </a>
             </article>
             
-            <article>
+            <article class="midlefootarticle">
                 <h4>Hey <a href="#top">Retour top de la page</a></h4>
             </article>
             <article>
@@ -222,6 +220,7 @@
         </section>
 
     </footer>
+    <script src="./js/main-script.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   
