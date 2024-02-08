@@ -14,7 +14,7 @@
 **DRAFT**
 >Premièrement réalisation d'une maquette ou *Wireframe* afin d'avoir une meilleure vision de l'objectif que je dois atteindre
 
-![cover](./asset/result.png)
+![cover](./asset/background/result.png)
 
 >Ensuite essayer de reproduire une page statique avec les différents éléments du Wireframe
 
