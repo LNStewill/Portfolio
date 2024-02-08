@@ -1,6 +1,7 @@
 html {
     font-size: 16px;
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../asset/cat-1285634_1280.webp),url(../asset/2.jpg);
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(../asset/background/tianjin-2185510_1280.jpg) ,url(../asset/background/2.jpg);
     /*/* Utilisez "linear-gradient" pour ajouter un effet d'arrière-plan 
     plus sombre à l'image (asset/2.jpg). Cela rendra le texte plus facile à lire */
     background-repeat: no-repeat;
@@ -9,21 +10,16 @@ html {
     scroll-behavior: smooth ;/*permet d'animer le defilement ou scroller de façon synchrone et un peu animé et non facadé*/
 
 }
+::-webkit-scrollbar {
+    display: none;
+  }
 
 *{
     margin: 0.0rem;
     padding: 0.0rem;
 }
 
-.main{
-    width: 100%;
-    /*background-position: center;
-    background-size: cover;*/
-    height: auto/*100vh*/;
-
-    margin-bottom: 7rem;
-}
-
+/*navigation*/
 .navbar{
     width: 75rem;
     height: 4.6875rem;
@@ -131,15 +127,32 @@ ul li a:hover{
     outline: none;
 }
 
-.content{
-    width: 75rem;
-    /*je dois enlever cette valeur auto de height pour appliquer le 100hv aux autres classes */
-    height: auto;
-    margin: auto;
-    color: #fff;
-    position: relative;
+.main{
+    width: 100%;
+    /*background-position: center;
+    background-size: cover;*/
+    height: auto/*100vh*/;
+
+    margin-bottom: 7rem;
 }
 
+/*partionnment de la page */
+.content{
+    width: 75rem;
+    height: 100vh;
+    margin:0 auto;
+    color: #fff;
+}
+
+.main_container {
+    width: 75rem;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 8rem;
+    color: #fff;
+    overflow: hidden;
+
+}
 .content .par{
     padding-left: 1.25rem;
     padding-bottom: 1.5625rem;
@@ -150,6 +163,11 @@ ul li a:hover{
 
 .par {
     text-align: justify;
+    padding-left: 1.25rem;
+    padding-bottom: 1.5625rem;
+    font-family: Arial;
+    letter-spacing: 0.075rem;
+    line-height: 1.875rem;
 }
 .content h1{
     font-family: 'Times New Roman';
@@ -159,118 +177,9 @@ ul li a:hover{
     letter-spacing: 0.125rem;
 }
 
-.content .cn{
-    width: 10rem;
-    height: 2.5rem;
-    background: #0088ff;
-    border: none;
-    margin-bottom: 0.625rem;
-    margin-left: 1.25rem;
-    font-size: 1.125rem;
-    border-radius: 0.625rem;
-    cursor: pointer;
-    transition: .4s ease;
-    
-}
-
-.content .cn a{
-    text-decoration: none;
-    color: #000;
-    transition: .3s ease;
-}
-
-.cn:hover{
-    background-color: #fff;
-}
-
 .content span{
     color: #0088ff;
     font-size: 4.0625rem
-}
-
-.form{
-    width: 15.625rem;
-    height: 23.75rem;
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    position: absolute;
-    top: -1.25rem;
-    left: 54.375rem;
-    transform: translate(0%,-5%);
-    border-radius: 0.625rem;
-    padding: 1.5625rem;
-}
-
-.form h2{
-    width: 13.75rem;
-    font-family: sans-serif;
-    text-align: center;
-    color: #0088ff;
-    font-size: 1.375rem;
-    background-color: #fff;
-    border-radius: 0.625rem;
-    margin: 0.125rem;
-    padding: 0.5rem;
-}
-
-.form input{
-    width: 15rem;
-    height: 2.1875rem;
-    background: transparent;
-    border-bottom: 0.0625rem solid #0088ff;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    color: #fff;
-    font-size: 0.9375rem;
-    letter-spacing: 0.0625rem;
-    margin-top: 1.875rem;
-    font-family: sans-serif;
-}
-
-.form input:focus{
-    outline: none;
-}
-
-::placeholder{
-    color: #fff;
-    font-family: Arial;
-}
-
-.btnn{
-    width: 15rem;
-    height: 2.5rem;
-    background: #0088ff;
-    border: none;
-    margin-top: 1.875rem;
-    font-size: 1.125rem;
-    border-radius: 0.625rem;
-    cursor: pointer;
-    color: #fff;
-    transition: 0.4s ease;
-}
-.btnn:hover{
-    background: #fff;
-    color: #0088ff;
-}
-.btnn a{
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-}
-.form .link{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.0625rem;
-    padding-top: 1.25rem;
-    text-align: center;
-}
-.form .link a{
-    text-decoration: none;
-    color: #0088ff;
-}
-.liw{
-    padding-top: 0.9375rem;
-    padding-bottom: 0.625rem;
-    text-align: center;
 }
 .icons a{
     text-decoration: none;
@@ -286,7 +195,6 @@ ul li a:hover{
 .icons ion-icon:hover{
     color: #0088ff;
 }
-
 
 /*ici le style de la section apropos*/
 .Apropos .Aboutimage1{
@@ -389,6 +297,36 @@ ul li a:hover{
   }
 
   /*partie formulaire de contact*/
+/*
+.contact_form input{
+    width: 15rem;
+    height: 2.1875rem;
+    background: transparent;
+    border-bottom: 0.0625rem solid #0088ff;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 0.9375rem;
+    letter-spacing: 0.0625rem;
+    margin-top: 1.875rem;
+    font-family: sans-serif;
+}
+
+.contact_form input:focus{
+    outline: none;
+}
+*/
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+
+.contact_form {
+    max-width:90rem ;
+  margin: 0 auto;
+}
+
   input[type=text], [type=email], select, textarea {
     width: 100%;
     background-color: #011721;
@@ -416,16 +354,15 @@ ul li a:hover{
     background-color: #ff7200;
   }
   
-  .container {
+ .container_form {
     display: block;
-    width: 50%;
-    margin-left: 15%;
+    max-width: 50%;
+    margin : 0 auto;
     border-radius: 0.3125rem;
-    /*background-color: #f2f2f2;*/
     padding: 1.25rem;
   }
 
-
+/*texte défilant */
 /* le block conteneur */
 .Texte_defilant {
 	max-width: 60rem;                      /* largeur de la fenêtre */
@@ -442,7 +379,7 @@ ul li a:hover{
   white-space: nowrap;                  /* pas de passage à la ligne */
   animation: defilement 15s infinite linear;
 }
-
+/*animation css avec les keyframes*/
 @keyframes defilement {
     0% {
       transform: translate3d(/*x position*/0,/*y*/-50%,/*z*/0);      /* position initiale à droite */
@@ -452,8 +389,56 @@ ul li a:hover{
     }
   }
 
+  /*Partie Projets*/
+  .container_projets {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
 
-  /*Responsive css */
-  /**
-  *
-  */
+  .list_projets {
+    display:  flex;
+    max-width: fit-content;
+    flex-direction: row;
+    gap: 2.5rem;
+    margin: 0 auto;
+  }
+  .list_projets article {
+    max-width: 50%;
+    border: #ff7200 solid thick;
+    border-radius: .3rem;   
+  }
+  .image_projets img{
+    display: block;
+    width: 100%;
+    vertical-align: middle;
+  }
+
+  .info_projets {
+    padding: .9rem;
+    text-align: justify;
+  }
+
+  .btn_projets {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    background-color: #0088ff;
+    color: white;
+    font-size: inherit;
+    font-weight: bold;
+    text-align: center;
+    border-radius: .3rem;
+    text-decoration: none;
+    line-height: 50px;
+  }
+
+  .btn_projets:hover {
+    background-color: #ff7200;
+  }
+  
+/*Responsive css */
+/**
+*
+*/

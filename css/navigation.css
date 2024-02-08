@@ -1,0 +1,107 @@
+/* ici tout le css de la partie navigation */
+.navbar{
+    width: 75rem;
+    height: 4.6875rem;
+    margin: auto;
+}
+.menu .active {
+    background-color: #ff7200;
+  color: white;
+}
+.icon{
+    width: 12.5rem;
+    float: left;
+    height: 4.375rem;
+}
+
+.logo{
+    color: #0088ff;
+    font-size: 2.1875rem;
+    font-family: Arial;
+    padding-left: 1.25rem;
+    float: left;
+    padding-top: 0.625rem;
+    margin-top: 0.3125rem
+}
+.logo abbr {
+    text-decoration: none;
+  }
+
+.menu{
+    width: 25rem;
+    float: left;
+    height: 4.375rem;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 3.875rem;
+    margin-top: 1.6875rem;
+    font-size: 0.875rem;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #0088ff;
+}
+
+.search{
+    width: 20.625rem;
+    float: left;
+    margin-left: 16.875rem;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 12.5rem;
+    height: 2.5rem;
+    background: transparent;
+    border: 0.0625rem solid #0088ff;
+    margin-top: 0.8125rem;
+    color: #fff;
+    border-right: none;
+    font-size: 1rem;
+    float: left;
+    padding: 0.625rem;
+    border-bottom-left-radius: 0.3125rem;
+    border-top-left-radius: 0.3125rem;
+}
+
+.btn{
+    width: 6.25rem;
+    height: 2.5rem;
+    background: #0088ff;
+    border: 0.125rem solid #0088ff;
+    margin-top: 0.8125rem;
+    color: #fff;
+    font-size: 0.9375rem;
+    border-bottom-right-radius: 0.3125rem;
+    border-bottom-right-radius: 0.3125rem;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
