@@ -153,13 +153,13 @@ ul li a:hover{
     overflow: hidden;
 
 }
-.content .par{
+/*.content .par{
     padding-left: 1.25rem;
     padding-bottom: 1.5625rem;
     font-family: Arial;
     letter-spacing: 0.075rem;
     line-height: 1.875rem;
-}
+}*/
 
 .par {
     text-align: justify;
@@ -254,7 +254,7 @@ ul li a:hover{
     text-align: center;
   }
   .AboutImagetext p {
-    font-size:1.2rem; text-align: justify
+    font-size:inherit; text-align: justify
   }
   /*image avec efftet overlay */
 
@@ -419,7 +419,7 @@ ul li a:hover{
     text-align: justify;
   }
 
-  .btn_projets {
+  .btn2_projets {
     display: block;
     width: 200px;
     height: 50px;
@@ -434,10 +434,40 @@ ul li a:hover{
     line-height: 50px;
   }
 
-  .btn_projets:hover {
+  .btn2_projets:hover {
     background-color: #ff7200;
   }
   
+  .content .cn{
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    font-size: inherit;
+    font-weight: bold;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+
+.cn:hover{
+    background-color: #fff;
+}
+
+.presentation_projets {
+    overflow-y: scroll;    
+}
+.presentation_projets::-webkit-scrollbar {
+    display: none;
+}
+strong {
+    color: #ff7200;
+}
+
+b {
+    color: springgreen;
+}
 /*Responsive css */
 /**
 *
