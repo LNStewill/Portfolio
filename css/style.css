@@ -409,7 +409,7 @@ ul li a:hover{
     border-radius: .3rem;   
   }
   .image_projets img{
-    display: block;
+    display: inline-block;
     width: 100%;
     vertical-align: middle;
   }

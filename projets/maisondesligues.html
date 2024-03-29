@@ -31,17 +31,19 @@
     </header>
 
     <section class="content presentation_projets">
-        <h1>PRÉSENTATION DU PROJET PERSONNEL<br><span>JAVA</span><br>Gestion des Employés des Ligues</h1>
+        <h1>PRÉSENTATION DU PROJET PERSONNEL<br><span>WEB</span><br>Maison des Ligues</h1>
         
-        <h1>AP : Gestion des Employés des Ligues</h1>
+        <h1>AP : Maison des LIGUES</h1>
 
         <p class="par"> 
             
                 <strong>Introduction</strong><br>
-                Le projet <em>M2L</em>, développé dans le cadre de ma 2e année en formation <abbr title="Brevet de technicien supérieur">BTS</abbr> 
+                Le projet <em>Maisond des LIGUES</em>, développé dans le cadre de ma 2e année en formation <abbr title="Brevet de technicien supérieur">BTS</abbr> 
                 <abbr title="Services informatiques aux organisations">SIO</abbr> option 
-                <abbr title="Solution logiciel application et métiers">SLAM</abbr>, vise à mettre en place une application 
-                de gestion des employés des ligues sportives. Voici les éléments clés du projet :
+                <abbr title="Solution logiciel application et métiers">SLAM</abbr>, Ce projet consiste à créer une page publicitaire en ligne pour la 
+                Maison de ligues, en vue des Jeux de Paris 2024. L’objectif est d’attirer de nouveaux abonnés en proposant la diffusion de toutes les compétitions 
+                sportives.
+                Voici les éléments clés du projet :
         </p>
         <p class="par">
             <strong>Contexte :</strong>
@@ -56,29 +58,12 @@
             L’objectif est de désigner un administrateur par ligue qui sera chargé de recenser les employés de sa
              propre ligue. Le travail est partiellement achevé, notre mission consiste à le compléter.
              Et pour meiux visualiser l'ordonnancement un arbre Heuristique a été fait 
-
-            <li class="par">
-                <img src="../asset/projets/ppejava.png" alt="Arbre_heuristique" style="width: 90%;"> 
-            </li> 
         </p>
 
         <p class="par">
-            <strong>Niveaux d’habilitation des utilisateurs :</strong>
+            <strong>MCD du Projet</strong>
             <li class="par">
-                Employé de ligue :
-                Peut utiliser l’application comme un annuaire, mais n’a pas de droits d’écriture.</li>
-            <li class="par">
-                Employé par ligue (administrateur) :
-                Peut gérer la liste des employés de sa ligue à l’aide d’une application bureau.
-            </li>
-            <li class="par">
-                Super-administrateur :
-                A accès en écriture à tous les employés des ligues.
-                Peut également gérer les comptes des administrateurs des ligues via une application en ligne
-                 de commande.
-            </li>
-            <li class="par">
-                <img src="../asset/projets/MCD_LIGUE_EMPLOYE.png" alt="MCD_M2L" style="width: 90%;"> 
+                <img src="../asset/projets/MCD_MDL.png" alt="MCD_MDL" style="width: 90%;"> 
             </li>
             
             <li class="par">
@@ -98,40 +83,20 @@
         </p>
 
         <p class="par">
-            <strong>Architecture :</strong>
-            L’application suit une architecture <b>3-tiers</b> que nous devons conserver.
-            Elle sera rendue multi-utilisateurs grâce à l’utilisation d’une base de données.
+            Gère (Admin, Client) :
+L’administrateur peut gérer zéro ou plusieurs clients.
+Un client est géré par au plus un administrateur.
+Publie (Admin, Événement) :
+L’administrateur peut publier zéro ou plusieurs événements.
+Un événement est publié par exactement un administrateur.
+Consulte (Client, Événement) :
+Un client peut consulter zéro ou plusieurs événements.
+Un événement peut être consulté par zéro ou plusieurs clients.
         </p>
 
-        <p class="par">
-            En résumé, le projet M2L permettra une gestion efficace des employés des ligues 
-            sportives tout en respectant les niveaux d’habilitation définis.
-        </p>
-        <br>
-        <h3>
-            VOICI CE QUE ça DONNE EN <abbr title="Integrate Development Environnement">IDE</abbr>
-        </h3>
-        <p class="par">
-            Comme le projet est configuré pour fonctionner que sous Eclipse par conséquent il est notre principale
-            de developpement.
-        </p>
-        <li class="par">
-            <img src="../asset/projets/Eclipse1.png" alt="Arbre_heuristique" style="width: 90%;"> 
-        </li>
-        <li class="par">
-            <img src="../asset/projets/Eclipse2.png" alt="Arbre_heuristique" style="width: 90%;"> 
-        </li>
-
-        <section class="list_projets">
-            <article id="image_projets" class="image_projets">
-                <img src="../asset/projets/Eclipse3.png" alt="Arbre_heuristique">
-            </article>
-            <article class="info_projets">
-                <img src="../asset/projets/Eclipse4.png" alt="Arbre_heuristique">
-            </article><!-- comment -->
         </section>
         <br>
-        <form action="https://github.com/LSDORA/personnelProject">
+        <form action="https://github.com/LNStewill/Maison_des_ligues">
             <button class="cn">VOIR CODE SOURCE</button>
         </form>
         <br>
