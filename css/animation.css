@@ -1,0 +1,26 @@
+/*texte défilant */
+/* le block conteneur */
+.Texte_defilant {
+	max-width: 60rem;                      /* largeur de la fenêtre */
+	margin: 1rem auto 2rem;
+	border: 0.3rem solid #F0F0FF;
+	overflow: hidden;                     /* masque tout ce qui dépasse */
+	box-shadow: 0 .25rem .5rem #CCC,inset 0 0 1rem .25rem #CCC;
+}
+/* le bloc défilant */
+.Texte_defilant > :first-child {
+  display: inline-block;                /* modèle de boîte en ligne */
+  padding-right: 2rem;                   /* un peu d'espace pour la transition */
+  padding-left: 100%;                   /* placement à droite du conteneur */
+  white-space: nowrap;                  /* pas de passage à la ligne */
+  animation: defilement 15s infinite linear;
+}
+/*animation css avec les keyframes*/
+@keyframes defilement {
+    0% {
+      transform: translate3d(/*x position*/0,/*y*/-50%,/*z*/0);      /* position initiale à droite */
+    }
+    100% {
+      transform: translate3d(-100%,0,0);  /* position finale à gauche */
+    }
+  }

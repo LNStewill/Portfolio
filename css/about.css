@@ -1,0 +1,61 @@
+/*ici le style de la section apropos*/
+.Apropos .Aboutimage1{
+    float: left;
+    width: 46%;
+}
+
+.Apropos .Aboutimage2{
+    float: right;
+    width: 46%;
+}
+
+/* Pour appliquer l'effet overlay à l'image*/
+.containerAboutImage {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: /*#008CBA*/ #2a3441;
+    opacity: 0.85;
+    overflow: /*hidden*/ scroll;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+  }
+  
+  .containerAboutImage:hover .overlay {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  
+  .AboutImagetext {
+    color: white;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .AboutImagetext p {
+    font-size:inherit; text-align: justify
+  }
+  /*image avec efftet overlay */
