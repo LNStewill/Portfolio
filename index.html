@@ -7,24 +7,45 @@
     <title>Nathan Stéwill LOUFOUA</title>
     <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
 
     <header id="top">
         <nav class="navbar">
-            <ul class="menu">
+            <ul class="topnav" id="myTopnav">
                 <li>
-                    <span class="icon">
-                        <abbr class="logo" title="LOUFOUA Nathan Stewill"> LNS</abbr>
+                    <span class="iconX">
+                        <abbr class="logo" title="LOUFOUA Nathan Stewill"><a class="active" href="./">LNS</a></abbr>
                     </span>
                 </li>
-                <li><a class="active" href="./">ACCUEIL</a></li>
                 <li><a href="#Apropos">APROPOS</a></li>
                 <li><a href="#PROJETS">PROJETS</a></li>
                 <li><a href="#STAGES">STAGES</a></li>
                 <li><a href="#VEILLE_TECH">VEILLE_TECH</a></li>
                 <li><a href="#CONTACT">CONTACT</a></li>
+                <li class="icon" onclick="AjoutClass()">
+                    <a href="javascript:void(0);" >
+                    <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+                            
+              
             </ul>
+
+            <!--<ul class="menu">
+                <li>
+                    <span class="iconX">
+                        <abbr class="logo" title="LOUFOUA Nathan Stewill"><a class="active" href="./">LNS</a></abbr>
+                    </span>
+                </li>
+                <li><a href="#Apropos">APROPOS</a></li>
+                <li><a href="#PROJETS">PROJETS</a></li>
+                <li><a href="#STAGES">STAGES</a></li>
+                <li><a href="#VEILLE_TECH">VEILLE_TECH</a></li>
+                <li><a href="#CONTACT">CONTACT</a></li>
+            </ul>-->
         </nav>
     </header>
 
@@ -245,8 +266,8 @@
 
             </p>
 
-            <section style="display: flex; gap:1.2rem; flex-direction: row;">
-                <article style="width: 40%; border: solid; border-radius: 2%;">
+            <section class="present_stage" >
+                <article class="present_stage_article">
                     <img src="asset/LOGO-ONG.png" alt="Pangee" style="width: 50%;
                     left: 23%;
                     position: relative;
@@ -254,7 +275,7 @@
 
                 </article>
 
-                <article style="width: 40%; border: solid; border-radius: 2%; height: 16.8rem;">
+                <article class="present_stage_article">
                     <img src="asset/Enerlis.gif" alt="Enerlis" style="width: 100%; border-radius: 2rem;">
 
                 </article>
@@ -322,7 +343,6 @@
 
             <p class="par">
                 N'hésitez pas à me contacter via mes différents réseaux ci-contre 
-                
             </p>
 
             <!--<arctile class="container_form">
