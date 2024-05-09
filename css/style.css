@@ -52,13 +52,30 @@
 }
 
 .present_stage {
-  display: flex; gap:1.2rem; flex-direction: row;
-};
-
-.present_stage_article {
-  width: 40%; border: solid; border-radius: 2%;
+  width: 100%;
+  display: flex; gap:2.5rem; flex-direction: row;
 }
 
+.stage_article {
+  width: 40%;
+  /*border : #ff7200 solid thick;*/
+  border-radius: 2%;
+  height: 12.2rem;
+}
+
+.first {
+  background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(../asset/LOGO-ONG.png);
+  background-repeat: no-repeat;
+  background-position: center, left ;
+  background-size: contain;
+}
+.second {
+  background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(../asset/Enerlis.gif);
+  background-repeat: no-repeat;
+  background-position: center,top left ;
+  background-size: cover, contain;
+
+}
 .par {
     text-align: justify;
     padding-bottom: 1.5625rem;

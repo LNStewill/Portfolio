@@ -24,9 +24,9 @@ var mailtoLink = "mailto:email@example.com?body=" + encodeURIComponent(bodyText)
 window.location.href = mailtoLink;
  */
 /*parcontre la fonction fléché elle doit etre stockée dans une variable sinon elle ne fonctionne pas */
-const form = document.querySelector('form');
+/*const form = document.querySelector('form');
   const message = document.querySelector('#message');
-  form.addEventListener('submit', (event) => /*ici la flèche remplace le mot spécifique function du coup c'est autre façon de declarer une fonction en JS*/{
+  form.addEventListener('submit', (event) => /*ici la flèche remplace le mot spécifique function du coup c'est autre façon de declarer une fonction en JS*//*{
     event.preventDefault();
     const body = encodeURIComponent(message.value);
 
@@ -34,4 +34,4 @@ const form = document.querySelector('form');
 
     // Rediriger l'utilisateur vers le client de messagerie par défaut
     window.location.href = mailtoLink;
-  });
+  });*/
