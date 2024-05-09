@@ -1,3 +1,13 @@
+//function Ajout de classe pour gerer le menu
+function AjoutClass() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
 /**
  * ce script permet de recuperer la valeur saisie dzns le champ textarea et de la placer comme corps du mail lors de l'envoir 
  * si une fonction se trouve dans les parentheses e.g : (function() {}) elle est isolée et donc tous ses ééments ne peuvent être utilisées qu'à l'intérieur
@@ -25,13 +35,3 @@ const form = document.querySelector('form');
     // Rediriger l'utilisateur vers le client de messagerie par défaut
     window.location.href = mailtoLink;
   });
-
-  //function Ajout de classe pour gerer le menu
-  function AjoutClass() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }

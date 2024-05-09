@@ -59,3 +59,11 @@
     font-size:inherit; text-align: justify
   }
   /*image avec efftet overlay */
+
+  .Aboutimage1 h3::after {
+    border-top: .0625em solid;
+    border-color: azure;
+    content: "";
+    flex: 0.5;
+    margin: 0.5em;
+  }

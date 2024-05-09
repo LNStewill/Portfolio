@@ -1,6 +1,6 @@
+@import url(responsive.css);
 @import url(navigation.css);
 @import url(reset.css);
-@import url(responsive.css);
 @import url(footer.css);
 @import url(about.css);
 @import url(animation.css);
@@ -31,33 +31,24 @@
     outline: none;
 }
 
-.main{
-    width: 96%;
-    max-width: 99%;
-    /*background-position: center;
-    background-size: cover;*/
-    height: auto/*100vh*/;
-
-    margin-bottom: 7rem;
-}
-
 /*partionnment de la page */
 .content{
-    width: 80%;
-    max-width: 96%;
+    width: 86%;
+    max-width: 94%;
     height: 100vh;
     margin:0 auto;
     color: #fff;
 }
 
 .main_container {
-    width: 75rem;
+    /*width: 75rem;*/
+    width: 86%;
+    max-width: 96%;
     height: auto;
     margin: 0 auto;
     margin-bottom: 8rem;
     color: #fff;
-    overflow: hidden;
-
+    overflow: scroll;
 }
 
 .present_stage {
@@ -106,7 +97,16 @@
     justify-content: center;
     align-items: center;
 }
-
+.bonjour {
+  display: flex;
+}
+.bonjour::before,
+.bonjour::after {
+    border-top: .0625em solid;
+    content: "";
+    flex: 0.5;
+    margin: 0.5em;
+}
   /*Partie Projets*/
   .container_projets {
     display: flex;
