@@ -16,4 +16,19 @@
     span.bonjour::after, span.bonjour::before{
       display: none;
     }
+
+    .list_projets article {
+      max-height: 10rem;
+    }
+
+    .info_projets {
+      
+      overflow: scroll;
+    }
+
+    .image_projets img {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
   }

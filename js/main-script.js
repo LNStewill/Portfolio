@@ -8,6 +8,10 @@ function AjoutClass() {
   }
 }
 
+let date = new Date();
+let annee = date.getFullYear();
+let element = document.getElementById('current_year');
+element.textContent = annee;
 /**
  * ce script permet de recuperer la valeur saisie dzns le champ textarea et de la placer comme corps du mail lors de l'envoir 
  * si une fonction se trouve dans les parentheses e.g : (function() {}) elle est isolée et donc tous ses ééments ne peuvent être utilisées qu'à l'intérieur

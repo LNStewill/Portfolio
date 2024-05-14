@@ -125,6 +125,10 @@
     margin: 0.5em;
 }
   /*Partie Projets*/
+
+  .PROJETS {
+    overflow-y: hidden;
+  }
   .container_projets {
     display: flex;
     flex-direction: column;
