@@ -1,12 +1,12 @@
 /*ici le style de la section apropos*/
-.Apropos .Aboutimage1{
+.Apropos .AboutInfo1{
     float: left;
-    width: 46%;
+    width: 100%;
 }
 
-.Apropos .Aboutimage2{
-    float: right;
-    width: 46%;
+.Apropos .AbouInfo2{
+    float: left;
+    width: 100%;
 }
 
 /* Pour appliquer l'effet overlay à l'image*/

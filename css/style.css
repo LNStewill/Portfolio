@@ -160,7 +160,7 @@
 
   .btn2_projets {
     display: block;
-    width: 200px;
+    width: 50%;
     height: 50px;
     margin: 20px auto;
     background-color: #0088ff;
@@ -177,7 +177,7 @@
     background-color: #ff7200;
   }
   
-  .content .cn{
+  /*.content*/ .cn{
     width: 160px;
     height: 40px;
     background: #ff7200;
