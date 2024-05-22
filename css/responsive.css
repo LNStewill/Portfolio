@@ -1,7 +1,8 @@
 /**
 *
 */
-@media only screen and (max-width: 37.5rem) {
+/* Sur les écrans dont la largeur est comprise entre 37.8rem et 50rem */
+@media screen and (max-width: 37.5rem) and (max-width: 50rem){
     /* CSS properties for small screens */
   
     .content {
@@ -17,8 +18,9 @@
       display: none;
     }
 
-    .list_projets article {
+    .list_projets .info_projets {
       max-height: 10rem;
+      width: 90%;
     }
 
     .info_projets {
@@ -26,9 +28,12 @@
       overflow: scroll;
     }
 
-    .image_projets img {
+    /*.image_projets img {
       display: inline-block;
       width: 100%;
       height: 100%;
+    }*/
+    .list_projets .image_projets {
+      display: none;
     }
   }
