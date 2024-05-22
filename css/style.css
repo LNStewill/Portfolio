@@ -129,7 +129,7 @@
   .PROJETS {
     overflow-y: hidden;
   }
-  .container_projets {
+  /*.container_projets {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
@@ -157,7 +157,8 @@
     padding: .9rem;
     text-align: justify;
   }
-
+*/
+/*tout esst remplacé par le W3css */
   .btn2_projets {
     display: block;
     width: 50%;
