@@ -20,7 +20,9 @@
 
     .list_projets .info_projets {
       max-height: 10rem;
-      width: 90%;
+      width: 70%;
+      position: relative;
+      left: 10%;
     }
 
     .info_projets {
@@ -35,5 +37,9 @@
     }*/
     .list_projets .image_projets {
       display: none;
+    }
+
+    .lunette {
+      margin-top:16px !important
     }
   }
